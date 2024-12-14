@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GoHighLevel Setup Guide - Tech Time with Tina</title>
-    <style>
+  <style>
     :root {
       --dark-slate: #2D3748;
       --teal: #4FD1C5;
@@ -25,19 +22,10 @@
     .header {
       text-align: center;
       margin-bottom: 3rem;
-      padding: 2rem;
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(45, 55, 72, 0.1);
     }
     
     .logo-container {
       margin-bottom: 2rem;
-      transition: transform 0.3s ease;
-    }
-
-    .logo-container:hover {
-      transform: scale(1.02);
     }
 
     .cta-button {
@@ -55,17 +43,15 @@
     .cta-button:hover {
       background: var(--dark-slate);
       transform: translateY(-2px);
-      box-shadow: 0 4px 6px rgba(45, 55, 72, 0.1);
     }
 
     .affiliate-banner {
       background: linear-gradient(45deg, var(--dark-slate), var(--teal));
       color: white;
-      padding: 2rem;
+      padding: 1.5rem;
       border-radius: 8px;
       margin: 2rem 0;
       text-align: center;
-      box-shadow: 0 4px 6px rgba(45, 55, 72, 0.1);
     }
     
     .disclosure {
@@ -83,9 +69,6 @@
       margin: 1rem 0;
       font-size: 0.9rem;
       color: var(--dark-slate);
-      padding: 1rem;
-      background: rgba(79, 209, 197, 0.1);
-      border-radius: 8px;
     }
     
     h1 {
@@ -118,12 +101,6 @@
       border-radius: 8px;
       box-shadow: 0 2px 4px rgba(45, 55, 72, 0.1);
       margin-bottom: 2rem;
-      transition: transform 0.3s ease;
-    }
-
-    .section:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 4px 8px rgba(45, 55, 72, 0.15);
     }
     
     .step {
@@ -152,255 +129,216 @@
       background: rgba(79, 209, 197, 0.05);
       border-radius: 4px;
     }
-
-    /* Navigation */
-    .nav-menu {
-      position: sticky;
-      top: 20px;
-      background: white;
-      padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(45, 55, 72, 0.1);
-      margin-bottom: 2rem;
-    }
-
-    .nav-menu ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .nav-menu li {
-      margin: 0.5rem 0;
-    }
-
-    .nav-menu a {
-      color: var(--dark-slate);
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
-
-    .nav-menu a:hover {
-      color: var(--teal);
-    }
-
-    /* Responsive Design */
-    @media (max-width: 768px) {
-      body {
-        padding: 1rem;
-      }
-
-      .header {
-        padding: 1rem;
-      }
-
-      h1 {
-        font-size: 2rem;
-      }
-
-      h2 {
-        font-size: 1.5rem;
-      }
-
-      .section {
-        padding: 1rem;
-      }
-    }
-
-    /* Print Styles */
-    @media print {
-      body {
-        background: white;
-      }
-      
-      .section {
-        box-shadow: none;
-        border: 1px solid #eee;
-        break-inside: avoid;
-      }
-
-      .cta-button {
-        border: 2px solid var(--teal);
-        color: var(--teal);
-        background: none;
-      }
-
-      .nav-menu {
-        display: none;
-      }
-    }
-    </style>
+  </style>
 </head>
 <body>
-    <nav class="nav-menu">
-        <h3>Quick Navigation</h3>
+  <div class="header">
+    <div class="logo-container">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="200">
+        <!-- [Previous SVG code remains unchanged] -->
+        <circle cx="200" cy="200" r="150" fill="#2D3748"/>
+        <circle cx="200" cy="200" r="140" fill="none" stroke="#4FD1C5" stroke-width="3"/>
+        <path d="M 200 60 L 200 90 M 340 200 L 310 200 M 200 340 L 200 310 M 60 200 L 90 200" 
+              stroke="#4FD1C5" stroke-width="3"/>
+        <circle cx="200" cy="90" r="6" fill="#4FD1C5"/>
+        <circle cx="310" cy="200" r="6" fill="#4FD1C5"/>
+        <circle cx="200" cy="310" r="6" fill="#4FD1C5"/>
+        <circle cx="90" cy="200" r="6" fill="#4FD1C5"/>
+        <path d="M 200 200 L 200 100" stroke="#F6E05E" stroke-width="6"/>
+        <path d="M 200 200 L 280 200" stroke="#F6E05E" stroke-width="6"/>
+        <circle cx="200" cy="200" r="15" fill="#F6E05E"/>
+        <circle cx="200" cy="200" r="8" fill="#2D3748"/>
+        <path d="M 200 70 L 200 330" stroke="#4FD1C5" stroke-width="1" opacity="0.3"/>
+        <path d="M 70 200 L 330 200" stroke="#4FD1C5" stroke-width="1" opacity="0.3"/>
+        <text x="140" y="150" text-anchor="middle" font-family="Lucida Handwriting" font-weight="normal" font-size="32" fill="#4FD1C5">Tech</text>
+        <text x="260" y="150" text-anchor="middle" font-family="Lucida Handwriting" font-weight="normal" font-size="32" fill="#4FD1C5">Time</text>
+        <text x="140" y="270" text-anchor="middle" font-family="Lucida Handwriting" font-weight="normal" font-size="29" fill="#4FD1C5">with</text>
+        <text x="260" y="270" text-anchor="middle" font-family="Lucida Handwriting" font-weight="normal" font-size="32" fill="#4FD1C5">Tina</text>
+      </svg>
+    </div>
+    <h1>GoHighLevel Setup Guide</h1>
+    
+    <div class="affiliate-disclosure">
+      <p>📝 <strong>Affiliate Disclosure:</strong> This guide contains affiliate links. If you click through and make a purchase, I may receive a commission at no additional cost to you. This helps support the creation of free content like this guide. I only recommend products I personally use and believe will add value to your business.</p>
+    </div>
+
+    <div class="affiliate-banner">
+      <h2 style="color: white; border: none;">Ready to Start Your GoHighLevel Journey?</h2>
+      <p>Get started with a 14-day free trial and transform your business today!</p>
+      <a href="https://www.gohighlevel.com/?fp_ref=techtimewithtina29" class="cta-button">Start Your Free Trial</a>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>1. Account Creation and Initial Setup</h2>
+    
+    <h3>Sign Up Process</h3>
+    <div class="step">
+      <p>Follow these steps to create your account:</p>
+      <ol>
+        <li>Visit GoHighLevel through our affiliate link</li>
+        <li>Choose your subscription plan (14-day free trial available)</li>
+        <li>Enter your business details and payment information</li>
+        <li>Verify your email address</li>
+        <li>Complete your agency profile setup</li>
+      </ol>
+    </div>
+
+    <h3>Initial Platform Configuration</h3>
+    <div class="step">
+      <div class="highlight">
+        <p>Essential Setup Items:</p>
         <ul>
-            <li><a href="#setup">1. Initial Setup</a></li>
-            <li><a href="#domain">2. Domain Setup</a></li>
-            <li><a href="#funnel">3. Funnel Creation</a></li>
-            <li><a href="#integration">4. Integration Setup</a></li>
-            <li><a href="#campaign">5. Campaign Setup</a></li>
-            <li><a href="#maintenance">6. Maintenance</a></li>
+          <li>Set your business timezone</li>
+          <li>Configure your business hours</li>
+          <li>Upload your company logo</li>
+          <li>Set up your custom domain</li>
         </ul>
-    </nav>
+      </div>
+    </div>
+  </div>
 
-    <div class="header">
-        <div class="logo-container">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="200">
-                <!-- Background Circle -->
-                <circle cx="200" cy="200" r="150" fill="#2D3748"/>
-                <!-- Inner Circuit Ring -->
-                <circle cx="200" cy="200" r="140" fill="none" stroke="#4FD1C5" stroke-width="3"/>
-                <!-- Circuit Lines -->
-                <path d="M 200 60 L 200 90 M 340 200 L 310 200 M 200 340 L 200 310 M 60 200 L 90 200" 
-                      stroke="#4FD1C5" stroke-width="3"/>
-                <!-- Circuit Dots -->
-                <circle cx="200" cy="90" r="6" fill="#4FD1C5"/>
-                <circle cx="310" cy="200" r="6" fill="#4FD1C5"/>
-                <circle cx="200" cy="310" r="6" fill="#4FD1C5"/>
-                <circle cx="90" cy="200" r="6" fill="#4FD1C5"/>
-                <!-- Clock Hands -->
-                <path d="M 200 200 L 200 100" stroke="#F6E05E" stroke-width="6"/>
-                <path d="M 200 200 L 280 200" stroke="#F6E05E" stroke-width="6"/>
-                <!-- Center Element -->
-                <circle cx="200" cy="200" r="15" fill="#F6E05E"/>
-                <circle cx="200" cy="200" r="8" fill="#2D3748"/>
-                <!-- Subtle Dividing Lines -->
-                <path d="M 200 70 L 200 330" stroke="#4FD1C5" stroke-width="1" opacity="0.3"/>
-                <path d="M 70 200 L 330 200" stroke="#4FD1C5" stroke-width="1" opacity="0.3"/>
-                <!-- Text in Quadrants -->
-                <text x="140" y="150" text-anchor="middle" font-family="Lucida Handwriting" font-weight="normal" font-size="32" fill="#4FD1C5">Tech</text>
-                <text x="260" y="150" text-anchor="middle" font-family="Lucida Handwriting" font-weight="normal" font-size="32" fill="#4FD1C5">Time</text>
-                <text x="140" y="270" text-anchor="middle" font-family="Lucida Handwriting" font-weight="normal" font-size="29" fill="#4FD1C5">with</text>
-                <text x="260" y="270" text-anchor="middle" font-family="Lucida Handwriting" font-weight="normal" font-size="32" fill="#4FD1C5">Tina</text>
-            </svg>
-        </div>
-        <h1>GoHighLevel Setup Guide</h1>
-        
-        <div class="affiliate-disclosure">
-            <p>📝 <strong>Affiliate Disclosure:</strong> This guide contains affiliate links. If you click through and make a purchase, I may receive a commission at no additional cost to you. This helps support the creation of free content like this guide. I only recommend products I personally use and believe will add value to your business.</p>
-        </div>
-
-        <div class="affiliate-banner">
-            <h2 style="color: white; border: none;">Ready to Start Your GoHighLevel Journey?</h2>
-            <p>Get started with a 14-day free trial and transform your business today!</p>
-            <a href="https://www.gohighlevel.com/?fp_ref=techtimewithtina29" class="cta-button">Start Your Free Trial</a>
-        </div>
+  <div class="section">
+    <h2>2. Domain and Branding Setup</h2>
+    
+    <h3>Domain Name Selection</h3>
+    <div class="step">
+      <h4>Choose Your Domain Provider</h4>
+      <ul>
+        <li>GoDaddy</li>
+        <li>Namecheap</li>
+        <li>Google Domains</li>
+      </ul>
+      
+      <div class="tip">
+        <strong>Pro Tip:</strong> Consider domain privacy protection to keep your personal information secure.
+      </div>
     </div>
 
-    <div class="section" id="setup">
-        <h2>1. Account Creation and Initial Setup</h2>
-        
-        <h3>Sign Up Process</h3>
-        <div class="step">
-            <ol>
-                <li>Visit GoHighLevel through our affiliate link</li>
-                <li>Choose your subscription plan (14-day free trial available)</li>
-                <li>Enter your business details and payment information</li>
-                <li>Verify your email address</li>
-                <li>Complete your agency profile setup</li>
-            </ol>
-        </div>
+    <h3>Brand Guidelines Setup</h3>
+    <div class="step">
+      <div class="highlight">
+        <p>Essential Branding Elements:</p>
+        <ul>
+          <li>Define primary and secondary colors</li>
+          <li>Choose headline and body text fonts</li>
+          <li>Create consistent visual elements</li>
+          <li>Design email templates</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-        <h3>Initial Platform Configuration</h3>
-        <div class="step">
-            <div class="highlight">
-                <p>Essential Setup Items:</p>
-                <ul>
-                    <li>Set your business timezone</li>
-                    <li>Configure your business hours</li>
-                    <li>Upload your company logo</li>
-                    <li>Set up your custom domain</li>
-                </ul>
-            </div>
-        </div>
+  <div class="section">
+    <h2>3. Funnel Creation</h2>
+    
+    <h3>Essential Funnel Components</h3>
+    <div class="step">
+      <h4>Landing Page Setup</h4>
+      <div class="highlight">
+        <p>Key Elements:</p>
+        <ul>
+          <li>Compelling headline</li>
+          <li>Clear value proposition</li>
+          <li>Strong call-to-action</li>
+          <li>Social proof elements</li>
+        </ul>
+      </div>
     </div>
 
-    <div class="section" id="domain">
-        <h2>2. Domain and Branding Setup</h2>
-        
-        <h3>Domain Name Selection</h3>
-        <div class="step">
-            <h4>Choose Your Domain Provider</h4>
-            <ul>
-                <li>GoDaddy</li>
-                <li>Namecheap</li>
-                <li>Google Domains</li>
-            </ul>
-            
-            <div class="tip">
-                <strong>Pro Tip:</strong> Consider domain privacy protection to keep your personal information secure.
-            </div>
-        </div>
-
-        <h3>Brand Guidelines Setup</h3>
-        <div class="step">
-            <div class="highlight">
-                <p>Essential Branding Elements:</p>
-                <ul>
-                    <li>Define primary and secondary colors</li>
-                    <li>Choose headline and body text fonts</li>
-                    <li>Create consistent visual elements</li>
-                    <li>Design email templates</li>
-                </ul>
-            </div>
-        </div>
+    <div class="step">
+      <h4>Follow-up Sequence</h4>
+      <div class="highlight">
+        <p>Create an engagement sequence:</p>
+        <ol>
+          <li>Welcome email (Immediate)</li>
+          <li>Value content (Day 2)</li>
+          <li>Social proof (Day 4)</li>
+          <li>Offer presentation (Day 7)</li>
+        </ol>
+      </div>
     </div>
+  </div>
 
-    <div class="section" id="funnel">
-        <h2>3. Funnel Creation</h2>
-        
-        <h3>Essential Funnel Components</h3>
-        <div class="step">
-            <h4>Landing Page Setup</h4>
-            <div class="highlight">
-                <p>Key Elements:</p>
-                <ul>
-                    <li>Compelling headline</li>
-                    <li>Clear value proposition</li>
-                    <li>Strong call-to-action</li>
-                    <li>Social proof elements</li>
-                </ul>
-            </div>
-            
-            <div class="tip">
-                <strong>Pro Tip:</strong> Always test your landing page on multiple devices before going live.
-            </div>
-        </div>
-
-        <div class="step">
-            <h4>Follow-up Sequence</h4>
-            <div class="highlight">
-                <p>Create an engagement sequence:</p>
-                <ol>
-                    <li>Welcome email (Immediate)</li>
-                    <li>Value content (Day 2)</li>
-                    <li>Social proof (Day 4)</li>
-                    <li>Offer presentation (Day 7)</li>
-                </ol>
-            </div>
-        </div>
+  <div class="section">
+    <h2>4. Integration Setup</h2>
+    
+    <h3>Essential Integrations</h3>
+    <div class="step">
+      <div class="highlight">
+        <p>Required Integrations:</p>
+        <ul>
+          <li>Payment processors (Stripe/PayPal)</li>
+          <li>Email service providers</li>
+          <li>SMS providers</li>
+          <li>Calendar systems</li>
+        </ul>
+      </div>
+      
+      <div class="tip">
+        <strong>Pro Tip:</strong> Test all integrations thoroughly before going live with your campaigns.
+      </div>
     </div>
+  </div>
 
-    <div class="section" id="integration">
-        <h2>4. Integration Setup</h2>
-        
-        <h3>Essential Integrations</h3>
-        <div class="step">
-            <div class="highlight">
-                <p>Required Integrations:</p>
-                <ul>
-                    <li>Payment processors (Stripe/PayPal)</li>
-                    <li>Email service providers</li>
-                    <li>SMS providers</li>
-                    <li>Calendar systems</li>
-                </ul>
-            </div>
-            
-            <div class="tip">
-                <strong>Pro Tip:</strong> Test all integrations thoroughly before going live with your campaigns.
-            </div>
-        </div>
+  <div class="section">
+    <h2>5. Campaign Setup</h2>
+    
+    <h3>Lead Generation</h3>
+    <div class="step">
+      <div class="highlight">
+        <p>Campaign Elements:</p>
+        <ul>
+          <li>Lead magnets</li>
+          <li>Capture forms</li>
+          <li>Thank you pages</li>
+          <li>Follow-up sequences</li>
+        </ul>
+      </div>
     </div>
+  </div>
 
-    <div
+  <div class="section">
+    <h2>6. Maintenance and Optimization</h2>
+    
+    <h3>Regular Tasks</h3>
+    <div class="step">
+      <div class="maintenance-task">
+        <h4>Daily Tasks</h4>
+        <ul>
+          <li>Monitor incoming leads</li>
+          <li>Check automation workflows</li>
+          <li>Review campaign performance</li>
+        </ul>
+      </div>
+      
+      <div class="maintenance-task">
+        <h4>Weekly Tasks</h4>
+        <ul>
+          <li>Review analytics</li>
+          <li>Update content</li>
+          <li>Check integration status</li>
+        </ul>
+      </div>
+      
+      <div class="maintenance-task">
+        <h4>Monthly Tasks</h4>
+        <ul>
+          <li>Audit user permissions</li>
+          <li>Review and update templates</li>
+          <li>Analyze campaign performance</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="affiliate-banner" style="margin-top: 3rem;">
+    <h2 style="color: white; border: none;">Ready to Scale Your Business?</h2>
+    <p>Join thousands of successful businesses using GoHighLevel</p>
+    <a href="https://www.gohighlevel.com/?fp_ref=techtimewithtina29" class="cta-button">Get Started Now</a>
+    <div class="disclosure">
+      Note: The links above are affiliate links. I may earn a commission if you purchase through these links, at no extra cost to you.
+    </div>
+  </div>
+</body>
+</html>
